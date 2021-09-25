@@ -2,7 +2,7 @@ import { Component, Vue } from 'vue-property-decorator';
 
 @Component
 export default class Main extends Vue {
-    // モーダル機能を作成
+    // create modal
     private todo = '';
     private todoList:string[] = [];
 
