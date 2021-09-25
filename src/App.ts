@@ -1,10 +1,10 @@
 import { Component, Vue } from 'vue-property-decorator';
 import Header from './components/common/Header.vue';
-import HelloWorld from './components/HelloWorld.vue';
+import Main from './components/Main.vue';
 
 @Component({
     components: {
-        HelloWorld,
+        Main,
         Header,
     },
 })
