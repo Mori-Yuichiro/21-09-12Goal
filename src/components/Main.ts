@@ -1,11 +1,4 @@
 import { Component, Emit, Prop, Vue } from 'vue-property-decorator';
-// import ModalDialog from './ModalDialog';
-
-// @Component({
-//     components: {
-//         ModalDialog,
-//     }
-// })
 
 @Component
 export default class Main extends Vue {
