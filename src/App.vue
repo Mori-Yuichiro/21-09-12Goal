@@ -20,10 +20,20 @@
             <!-- Modal -->
             <Main v-if="modal" :todo="todo" @close="closeDialog()" @add="addTodo()"/>
             
-            <ul v-for="(todo, index) in todoList" :key="index+1">
-              <li>{{ todo }}</li>
-              <v-btn @click="remove(index)">削除</v-btn>
-            </ul>
+            <v-row>
+              <ul class="todo-list my-3 mx-8" v-for="(todo, index) in todoList" :key="index+1">
+                  <v-col cols="10">
+                    <v-card>
+                      <li>
+                        <p class="todo">{{ todo }}</p>
+                      </li>
+                      <v-card-actions>
+                        <v-btn @click="remove(index)">削除</v-btn>
+                      </v-card-actions>
+                    </v-card>
+                  </v-col>
+                </ul>
+            </v-row>
           </div>
         </v-container>
       </template>
@@ -32,3 +42,5 @@
 </template>
 
 <script lang="ts" src="./App.ts"></script>
+
+<style src="./style/App.css"></style>

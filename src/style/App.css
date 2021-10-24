@@ -1,0 +1,8 @@
+.todo-list {
+  list-style-type: none;
+  width: 300px;
+}
+
+.todo {
+  color: red;
+}
