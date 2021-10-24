@@ -1,4 +1,4 @@
-import { Component, Prop, Vue } from 'vue-property-decorator';
+import { Component, Vue } from 'vue-property-decorator';
 import Header from './components/common/Header.vue';
 import Main from './components/Main.vue';
 
