@@ -1,11 +1,13 @@
 import { Component, Vue } from 'vue-property-decorator';
 import Header from './components/common/Header.vue';
 import Main from './components/Main.vue';
+import Register from './components/login/Register.vue';
 
 @Component({
     components: {
         Main,
         Header,
+        Register,
     },
 })
 
