@@ -1,4 +1,4 @@
-import { Component, Vue } from 'vue-property-decorator';
+import { Component, Prop, Vue } from 'vue-property-decorator';
 import Header from './components/common/Header.vue';
 import Main from './components/Main.vue';
 import Register from './components/login/Register.vue';
@@ -15,6 +15,8 @@ export default class App extends Vue {
     private todo = '';
     private todoList:string[] = [];
     private modal = false;
+    private changePageList = ['Register', 'Login', 'Home'];
+    private selectedPage = this.changePageList[0];
 
     private addTodo()  {
         console.log(this.todo);
@@ -37,5 +39,10 @@ export default class App extends Vue {
 
     private closeDialog() {
         this.modal = false;
+    }
+
+    private showPageNumber() {
+        this.selectedPage = this.changePageList[2];
+        console.log(this.selectedPage);
     }
 }

@@ -2,7 +2,8 @@
   <v-app>
     <Header />
     <v-main>
-      <template>
+      <Register @changePage='showPageNumber' v-if="selectedPage === 'Register'" />
+      <template v-if="selectedPage === 'Home'">
         <v-container>
           <div>
             <v-img src="./assets/073Kazuki17103_TP_V.png" alt="星空"></v-img>
