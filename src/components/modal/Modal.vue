@@ -15,6 +15,6 @@
   </v-container>
 </template>
 
-<script lang="ts" src="./Main.ts" />
+<script lang="ts" src="./Modal.ts" />
 
-<style src="../style/Main.css"></style>
+<style src="../../style/Modal.css"></style>
