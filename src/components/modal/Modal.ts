@@ -4,7 +4,7 @@ import { Component, Emit, Prop, Vue } from 'vue-property-decorator';
 export default class Main extends Vue {
     @Prop()
     private todo!: string;
-    
+
     private modal = false;
 
     @Emit()

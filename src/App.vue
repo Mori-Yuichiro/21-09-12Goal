@@ -1,8 +1,9 @@
 <template>
   <v-app>
-    <Header />
+    <Header @logout="Logout" :selectedPage="selectedPage" />
     <v-main>
       <Register @changePage='showPageNumber' v-if="selectedPage === 'Register'" />
+      <Login @changePage='showPageNumber' v-if="selectedPage === 'Login'" />
       <Home v-if="selectedPage === 'Home'" />
     </v-main>
   </v-app> 

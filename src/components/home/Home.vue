@@ -17,16 +17,14 @@
             
             <v-row>
               <ul class="todo-list my-3 mx-8" v-for="(todo, index) in todoList" :key="index+1">
-                  <v-col cols="10">
-                    <v-card>
-                      <li>
-                        <p class="todo">{{ todo }}</p>
-                      </li>
-                      <v-card-actions>
-                        <v-btn @click="remove(index)">削除</v-btn>
-                      </v-card-actions>
-                    </v-card>
-                  </v-col>
+                  <v-card>
+                    <li>
+                      <p class="todo">{{ todo }}</p>
+                    </li>
+                    <v-card-actions>
+                      <v-btn @click="remove(index)">削除</v-btn>
+                    </v-card-actions>
+                  </v-card>
                 </ul>
             </v-row>
           </div>
