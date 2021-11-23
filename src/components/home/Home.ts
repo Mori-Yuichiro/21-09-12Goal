@@ -1,3 +1,4 @@
+import Api from '@/api/index';
 import { Component, Vue } from 'vue-property-decorator';
 import Modal from '../modal/Modal.vue';
 
@@ -12,7 +13,16 @@ export default class Home extends Vue {
     private todoList: string[] = [];
     private modal = false;
 
+    // private init() {
+    //     const result = new Api();
+    //     const todo = result.getAllTodo();
+    //     console.log('tst : ' + todo);
+    // }
+
     private addTodo()  {
+        const result = new Api();
+        const todo = result.getAllTodo();
+        console.log('tst : ' + todo);
         this.todoList.push(this.todo);
         this.todo = '';
         this.modal = false;

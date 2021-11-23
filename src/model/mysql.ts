@@ -8,11 +8,7 @@ export const getPool = (): Pool => {
     pool = createPool({
         host: DB_INFO.host,
         user: DB_INFO.user,
-        // password: 'root',
         database: DB_INFO.database,
-        // waitForConnections: true,
-        // connectionLimit: 10,
-        // queueLimit: 0,
     });
     return pool;
 };
